@@ -1,6 +1,6 @@
 <?php
 
-namespace Alura\Pdo\Domain\Model;
+namespace Didatics\Modules\Students\Entities;
 
 class Student
 {

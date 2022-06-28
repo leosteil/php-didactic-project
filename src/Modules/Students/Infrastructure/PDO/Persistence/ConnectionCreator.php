@@ -1,6 +1,6 @@
 <?php
 
-namespace Alura\Pdo\Infrastructure\Persistence;
+namespace Didatics\Modules\Students\Infrastructure\PDO\Persistence;
 
 use PDO;
 

@@ -1,10 +1,11 @@
 {
     "autoload": {
         "psr-4": {
-            "Alura\\Pdo\\": "src/"
+            "Didatics\\": "src/"
         }
     },
     "require": {
-        "ext-pdo": "*"
+        "ext-pdo": "*",
+        "php-di/php-di": "^6.4"
     }
 }
