@@ -14,6 +14,6 @@ class StudentTest extends TestCase
         $student = new Student(null, "John Snow", $birthDate);
 
         $expectedAge = $birthDate->diff(new DateTimeImmutable('now'))->y;
-        $this->assertNotEquals($expectedAge, $student->age());
+        $this->assertEquals($expectedAge, $student->age());
     }
 }
