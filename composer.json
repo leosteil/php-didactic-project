@@ -7,6 +7,7 @@
             "email": "lsteil@inf.ufsm.br"
         }
     ],
+    "description": "project used for study purposes",
     "autoload": {
         "psr-4": {
             "Didatics\\": "src/"
