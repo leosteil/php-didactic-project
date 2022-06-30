@@ -2,25 +2,26 @@
 
 namespace Didatics\Modules\Students\Commands;
 
-use Didatics\Modules\Students\Dtos\CreateStudentDTO;
-use Didatics\Modules\Students\Entities\Student;
-use Didatics\Modules\Students\Repositories\StudentRepository;
+use DateTimeImmutable;
 
 class CreateStudentCommand
 {
-    private StudentRepository $repository;
+    private string $name;
+    private \DateTimeInterface $birthDate;
 
-    public function __construct(StudentRepository $repository)
+    public function __construct(string $name, string $birthDate)
     {
-        $this->repository = $repository;
+        $this->name = $name;
+        $this->birthDate = new DateTimeImmutable($birthDate);
     }
 
-    public function execute(CreateStudentDTO $createStudentDTO)
+    public function getName(): string
     {
-        $student = new Student(
-            null,
-            $createStudentDTO->getName(),
-            $createStudentDTO->getBirthDate()
-        );
+        return $this->name;
+    }
+
+    public function getBirthDate(): \DateTimeInterface
+    {
+        return $this->birthDate;
     }
 }

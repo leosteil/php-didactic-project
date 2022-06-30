@@ -1,7 +1,7 @@
 <?php
 
 use DI\ContainerBuilder;
-use Didatics\Modules\Students\Commands\CreateStudentCommand;
+use Didatics\Modules\Students\Commands\CreateStudentHandler;
 use Didatics\Modules\Students\Infrastructure\PDO\Persistence\ConnectionCreator;
 use Didatics\Modules\Students\Infrastructure\PDO\Repositories\PdoStudentRepository;
 
@@ -11,7 +11,7 @@ $containerBuilder->addDefinitions([
     'CreateStudentCommand' => function () {
         $connection = ConnectionCreator::createConnection();
         $repository = new PdoStudentRepository($connection);
-        return new CreateStudentCommand($repository);
+        return new CreateStudentHandler($repository);
     },
 ]);
 
