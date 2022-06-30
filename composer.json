@@ -7,6 +7,14 @@
             "email": "lsteil@inf.ufsm.br"
         }
     ],
+    "description": "project used for study purposes",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Leonardo Steil",
+            "email": "lsteil@inf.ufsm.br"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "Didatics\\": "src/"
