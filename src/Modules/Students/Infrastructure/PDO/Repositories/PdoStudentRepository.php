@@ -2,8 +2,8 @@
 
 namespace Didatics\Modules\Students\Infrastructure\PDO\Repositories;
 
-use Didatics\Modules\Students\Entities\Student;
 use Didatics\Modules\Students\Repositories\StudentRepository;
+use Didatics\Modules\Students\Student;
 use PDO;
 
 class PdoStudentRepository implements StudentRepository

@@ -1,7 +1,6 @@
 <?php
 
-use Didatics\Modules\Students\Commands\CreateStudentCommand;
-use Didatics\Modules\Students\Dtos\CreateStudentDTO;
+use Didatics\Modules\Students\Commands\CreateStudentDTO;
 
 require_once 'vendor/autoload.php';
 

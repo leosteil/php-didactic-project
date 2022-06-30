@@ -2,7 +2,7 @@
 
 namespace Didatics\Modules\Students\Repositories;
 
-use Didatics\Modules\Students\Entities\Student;
+use Didatics\Modules\Students\Student;
 
 interface StudentRepository
 {
