@@ -8,6 +8,7 @@
         }
     ],
     "description": "project used for study purposes",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Didatics\\": "src/"
