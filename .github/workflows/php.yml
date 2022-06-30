@@ -32,8 +32,6 @@ jobs:
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
 
-    - uses: php-actions/composer@v5
-
     - name: PHPUnit tests
       uses: php-actions/phpunit@v3
 
