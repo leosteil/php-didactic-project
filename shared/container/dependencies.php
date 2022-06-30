@@ -8,7 +8,7 @@ use Didatics\Modules\Students\Infrastructure\PDO\Repositories\PdoStudentReposito
 $containerBuilder = new ContainerBuilder();
 
 $containerBuilder->addDefinitions([
-    'CreateStudentCommand' => function () {
+    'CreateStudentCoammand' => function () {
         $connection = ConnectionCreator::createConnection();
         $repository = new PdoStudentRepository($connection);
         return new CreateStudentCommand($repository);
