@@ -1,4 +1,12 @@
 {
+    "name": "leosteil/didactic-project",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Leonardo Steil",
+            "email": "lsteil@inf.ufsm.br"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "Didatics\\": "src/"
@@ -7,5 +15,8 @@
     "require": {
         "ext-pdo": "*",
         "php-di/php-di": "^6.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
     }
 }
