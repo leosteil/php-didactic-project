@@ -1,4 +1,12 @@
 {
+    "name": "leosteil/didactic-project",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Leonardo Steil",
+            "email": "lsteil@inf.ufsm.br"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "Didatics\\": "src/"
