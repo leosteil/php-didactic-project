@@ -35,7 +35,7 @@ class PdoStudentRepository implements StudentRepository
         ]);
 
         if ($success) {
-            $student->defineId($this->connection->lastInsertId());
+            $student->defineId((int) $this->connection->lastInsertId());
         }
 
         return $success;

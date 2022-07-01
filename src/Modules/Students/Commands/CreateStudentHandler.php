@@ -14,12 +14,14 @@ class CreateStudentHandler
         $this->repository = $repository;
     }
 
-    public function execute(CreateStudentCommand $createStudentDTO)
+    public function execute(CreateStudentCommand $createStudentDTO): void
     {
         $student = new Student(
             null,
             $createStudentDTO->getName(),
             $createStudentDTO->getBirthDate()
         );
+
+        $this->repository->save($student);
     }
 }
