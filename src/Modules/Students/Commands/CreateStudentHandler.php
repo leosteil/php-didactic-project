@@ -14,7 +14,7 @@ class CreateStudentHandler
         $this->repository = $repository;
     }
 
-    public function execute(CreateStudentCommand $createStudentDTO): void
+    public function handle(CreateStudentCommand $createStudentDTO): void
     {
         $student = new Student(
             null,

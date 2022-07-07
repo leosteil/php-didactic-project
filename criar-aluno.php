@@ -1,12 +1,14 @@
 <?php
 
+require_once 'bootstrap.php';
+
 use Didatics\Modules\Students\Commands\CreateStudentCommand;
 
-require_once 'vendor/autoload.php';
+$locator->addHandler(
+    $container->get('CreateStudentCommand'),
+    CreateStudentCommand::class
+);
 
-$container = require __DIR__ . '/shared/container/dependencies.php';
-
-$createStudentDto = new CreateStudentCommand('lhs', '1996-01-03');
-$createStudentCommand = $container->get('CreateStudentCommand');
-
-$createStudentCommand->execute($createStudentDto);
+$bus->handle(
+    new CreateStudentCommand('lhs', '1996-01-03')
+);

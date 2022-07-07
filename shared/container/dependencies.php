@@ -15,4 +15,4 @@ $containerBuilder->addDefinitions([
     },
 ]);
 
-return $containerBuilder->build();
+$container = $containerBuilder->build();
