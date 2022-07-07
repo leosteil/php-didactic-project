@@ -1,12 +1,13 @@
 <?php
 
+require_once  __DIR__ . '/app/bootstrap.php';
+
 use Didatics\Modules\Students\Commands\CreateStudentCommand;
+use League\Tactician\CommandBus;
 
-require_once 'vendor/autoload.php';
+$bus = $container->get(CommandBus::class);
 
-$container = require __DIR__ . '/shared/container/dependencies.php';
+$bus->handle(
+    new CreateStudentCommand('lhs', '1996-01-03')
+);
 
-$createStudentDto = new CreateStudentCommand('lhs', '1996-01-03');
-$createStudentCommand = $container->get('CreateStudentCommand');
-
-$createStudentCommand->execute($createStudentDto);
