@@ -52,4 +52,9 @@ class PdoStudentRepository implements StudentRepository
 
         return $statement->execute();
     }
+
+    public function allStudents(): array
+    {
+        return [];
+    }
 }
