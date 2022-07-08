@@ -4,7 +4,7 @@ namespace Didatics\Modules\Students\Commands;
 
 use DateTimeImmutable;
 
-class CreateStudentCommand
+class CreateStudent
 {
     private string $name;
     private \DateTimeInterface $birthDate;
