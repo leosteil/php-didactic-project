@@ -3,9 +3,9 @@
 require_once  __DIR__ . '/app/bootstrap.php';
 
 use Didatics\Modules\Students\Commands\CreateStudentCommand;
-use League\Tactician\CommandBus;
+use SimpleBus\Message\Bus\Middleware\MessageBusSupportingMiddleware;
 
-$bus = $container->get(CommandBus::class);
+$bus = $container->get(MessageBusSupportingMiddleware::class);
 
 $bus->handle(
     new CreateStudentCommand('lhs', '1996-01-03')
