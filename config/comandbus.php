@@ -2,8 +2,8 @@
 
 use Didatics\Modules\Students\Commands\CreateStudentCommand;
 use Didatics\Modules\Students\Commands\CreateStudentHandler;
-use Didatics\Modules\Students\Infrastructure\PDO\Persistence\ConnectionCreator;
 use Didatics\Modules\Students\Infrastructure\PDO\Repositories\PdoStudentRepository;
+use Shared\Infrastructure\PDO\Persistence\ConnectionCreator;
 use SimpleBus\Message\Bus\Middleware\MessageBusSupportingMiddleware;
 use SimpleBus\Message\CallableResolver\CallableMap;
 use SimpleBus\Message\CallableResolver\ServiceLocatorAwareCallableResolver;

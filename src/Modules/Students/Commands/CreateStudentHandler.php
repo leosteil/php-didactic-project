@@ -22,6 +22,6 @@ class CreateStudentHandler
             $createStudentDTO->getBirthDate()
         );
 
-        $this->repository->save($student);
+        echo $this->repository->save($student);
     }
 }

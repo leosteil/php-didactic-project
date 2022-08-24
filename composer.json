@@ -11,7 +11,9 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Didatics\\": "src/"
+            "Didatics\\": "src/",
+            "App\\": "app/",
+            "Shared\\": "shared/"
         }
     },
     "require": {
